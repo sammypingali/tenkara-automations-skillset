@@ -1,12 +1,18 @@
 {
   "skillset_name": "tenkara-automations",
   "description": "Skills for building and operating Tenkara automations on SuperAgent.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "skills": [
     {
       "name": "choose-execution-mode",
       "path": "choose-execution-mode/SKILL.md",
       "description": "Decide how a Tenkara automation should interact with an external system — via API/connector, Browser Use with Container host, Browser Use with BrowserBase host, or Computer Use. Invoke before building any new automation in SuperAgent, when an agent needs to pick how to reach a target system, or whenever you hear 'should I use BrowserBase / Computer Use / API for X', 'what's the right tool for scraping Y', 'how do I get the agent to do Z'. Wrong choice creates IP bans, brittle desktop automation, or unnecessary infrastructure cost.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "tenkara-supabase-setup",
+      "path": "tenkara-supabase-setup/SKILL.md",
+      "description": "Wire up read-only access to the Tenkara prod Supabase database via the remote Supabase MCP. Use when the user wants to connect Claude (or SuperAgent) to the Tenkara prod Supabase database, set up Supabase MCP, query prod, or asks anything like 'hook up the database', 'connect to Supabase', 'set up the Tenkara database'. HARD REQUIREMENT — setup is NOT complete until a write query has been observed to fail with a server-side Postgres error (permission denied 42501 or read-only transaction 25006). Do not skip the verification step.",
       "version": "0.1.0"
     }
   ]
