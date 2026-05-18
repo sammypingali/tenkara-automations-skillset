@@ -1,14 +1,13 @@
 {
-  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
   "skillset_name": "tenkara-automations",
   "description": "Skills for building and operating Tenkara automations on SuperAgent.",
+  "version": "0.1.0",
   "skills": [
     {
       "name": "choose-execution-mode",
-      "type": "skill-md",
+      "path": "choose-execution-mode/SKILL.md",
       "description": "Decide how a Tenkara automation should interact with an external system — via API/connector, Browser Use with Container host, Browser Use with BrowserBase host, or Computer Use. Invoke before building any new automation in SuperAgent, when an agent needs to pick how to reach a target system, or whenever you hear 'should I use BrowserBase / Computer Use / API for X', 'what's the right tool for scraping Y', 'how do I get the agent to do Z'. Wrong choice creates IP bans, brittle desktop automation, or unnecessary infrastructure cost.",
-      "url": "./choose-execution-mode/SKILL.md",
-      "digest": "sha256:e20cb750815c6e5f431a06d0db04dff43cdf562783afda4698b1d9d972d257b2"
+      "version": "0.1.0"
     }
   ]
 }
