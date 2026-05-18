@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
-  "name": "tenkara-automations",
+  "skillset_name": "tenkara-automations",
   "description": "Skills for building and operating Tenkara automations on SuperAgent.",
   "skills": [
     {
